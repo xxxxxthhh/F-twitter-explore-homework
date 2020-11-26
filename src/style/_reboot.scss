@@ -120,9 +120,17 @@ h1 {
 
 .main-login {
   @include button(85%, $body-bg, $primary-color);
+  //&:hover {
+  //  background-color: $login-hover-color;
+  //  color: $log-font-hover-color;
+  //}
 }
 
 .main-register {
   @include button(85%, $primary-color, $white);
   margin-bottom: 40px;
+  //&:hover {
+  //  background-color: $reg-hover-color;
+  //  color: $reg-font-hover-color;
+  //}
 }

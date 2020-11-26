@@ -15,6 +15,15 @@
   background-color: $bg-color;
   border: 1px solid $primary-color;
   color: $color;
+  &:hover {
+    @if &bg-color == $body-bg {
+      background-color: $login-hover-color;
+      color: $log-font-hover-color;
+    } @else {
+      background-color: $reg-hover-color;
+      color: $reg-font-hover-color;
+    }
+  }
 }
 
 @mixin center() {
