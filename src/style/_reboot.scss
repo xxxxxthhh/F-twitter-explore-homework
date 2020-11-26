@@ -1,3 +1,5 @@
+@import "mixins";
+
 body,
 html {
   margin: 0;
@@ -26,7 +28,8 @@ ol {
 }
 
 a {
-  color: $link-color;
+  color: $primary-color;
+  text-decoration: none;
 
   &:hover {
     color: $link-hover-color;
@@ -43,4 +46,48 @@ button {
 h1 {
   color: $heading-color;
   margin: 0;
+}
+
+.header {
+  height: 10%;
+  border-bottom: 1px solid $border-color;
+
+  &-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.company {
+  @include nav;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+
+.navigation {
+  @include nav;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.login {
+  //width: 80px;
+  //height: 35px;
+  //border-radius: 15px;
+  //background-color: $body-bg;
+  //border: 1px solid $primary-color;
+  //color: $primary-color;
+  @include button(80px, $body-bg, $primary-color);
+}
+
+.register {
+  //width: 80px;
+  //height: 35px;
+  //border-radius: 15px;
+  //background-color: $primary-color;
+  //border: 1px solid $primary-color;
+  //color: $white;
+  @include button(80px, $primary-color, $white);
+  margin-left: 5px;
 }

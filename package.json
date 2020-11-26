@@ -33,5 +33,6 @@
   "lint-staged": {
     "*.js": "eslint \"src/\" --cache --fix --format table",
     "*.{js,css,scss,md}": "prettier --write"
-  }
+  },
+  "dependencies": {}
 }
