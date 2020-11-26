@@ -16,3 +16,21 @@
   border: 1px solid $primary-color;
   color: $color;
 }
+
+@mixin center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin input() {
+  width: 85%;
+  background-color: $body-bg;
+  border: 0;
+  border-bottom: 1px solid $border-color;
+  margin: 10px 30px;
+  &::-webkit-input-placeholder {
+    color: $gray;
+    text-align: left;
+  }
+}

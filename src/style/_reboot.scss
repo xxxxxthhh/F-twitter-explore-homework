@@ -72,22 +72,57 @@ h1 {
 }
 
 .login {
-  //width: 80px;
-  //height: 35px;
-  //border-radius: 15px;
-  //background-color: $body-bg;
-  //border: 1px solid $primary-color;
-  //color: $primary-color;
   @include button(80px, $body-bg, $primary-color);
 }
 
 .register {
-  //width: 80px;
-  //height: 35px;
-  //border-radius: 15px;
-  //background-color: $primary-color;
-  //border: 1px solid $primary-color;
-  //color: $white;
   @include button(80px, $primary-color, $white);
   margin-left: 5px;
+}
+
+.main {
+  @include center;
+  height: 90%;
+  &-content {
+    @include center;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    flex-direction: column;
+  }
+}
+
+.slogan {
+  color: $white;
+  margin: 30px;
+}
+
+.username {
+  @include input;
+}
+
+.password {
+  @include input;
+}
+
+.forget {
+  margin: 10px 30px;
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+.intro {
+  align-self: flex-start;
+  margin: 0 30px;
+  font-size: 14px;
+}
+
+.main-login {
+  @include button(85%, $body-bg, $primary-color);
+}
+
+.main-register {
+  @include button(85%, $primary-color, $white);
+  margin-bottom: 40px;
 }
